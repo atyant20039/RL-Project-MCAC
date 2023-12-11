@@ -42,7 +42,7 @@ class SimplePointBot(Env, utils.EzPickle):
         self.window_height = window_height
         self.max_force = max_force
         self.action_space = Box(-np.ones(2), np.ones(2))
-        self.observation_space = Box(-np.ones(2) * np.float('inf'), np.ones(2) * np.float('inf'))
+        self.observation_space = Box(-np.ones(2) * np.inf, np.ones(2) * np.inf)
         self.walls = [self._complex_obstacle(wall) for wall in walls]
         self.wall_coords = walls
 
