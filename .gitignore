@@ -227,5 +227,4 @@ workflow_data/
 /.cache/
 
 # MCAC Repo specific
-outputs/
 data/
